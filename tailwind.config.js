@@ -5,7 +5,16 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        roslindale: 'Roslindale, bold', 
+        lane: 'Lane, normal'
+      },
+      colors: {
+        'yellow' : '#F6DD8B',
+        'brown' : '#6E4C1C'
+      }
+    },
   },
   plugins: [],
 }
