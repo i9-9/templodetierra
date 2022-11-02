@@ -43,18 +43,18 @@ const Navbar = () => {
                 </h1>
             </Link>
             <ul style={{color: `${textColor}`}} className='hidden sm:flex items-center'>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-2 hover:text-green' >
                     <Link href='/'>El Templo</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-2 hover:text-green'>
                     <Link href='/'>Retiros y eventos</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-2 hover:text-green'>
                     <Link href='/'>Reservas</Link>
                 </li>
-                <li className='px-4 py-2'>
+                <li className='px-4 py-2 hover:text-green'>
                     <Link href='/'>
-                        <button className='outline outline-1 px-2 py-2'>Contacto</button>
+                        <button className='outline outline-1 px-2 py-2 flex justify-self-center'>Contacto</button>
                     </Link>
                 </li>
             </ul>
@@ -66,18 +66,18 @@ const Navbar = () => {
                 }
             </div>
             {/* Mobile Menu */}
-            <div className={nav ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300' : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'}>
+            <div className={nav ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-yellow text-center ease-in duration-300' : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'}>
             <ul>
-                <li className='p-4 text-4xl hover:text-gray-500'>
+                <li className='p-4 text-4xl hover:text-green'>
                     <Link href='/'>El Templo</Link>
                 </li>
-                <li className='p-4 text-4xl hover:text-gray-500'>
+                <li className='p-4 text-4xl hover:text-green'>
                     <Link href='/'>Retiros y eventos</Link>
                 </li>
-                <li className='p-4 text-4xl hover:text-gray-500'>
+                <li className='p-4 text-4xl hover:text-green'>
                     <Link href='/'>Reservas</Link>
                 </li>
-                <li className='p-4 text-4xl hover:text-gray-500'>
+                <li className='p-4 text-4xl hover:text-green'>
                     <Link href='/'>Contacto</Link>
                 </li>
             </ul>
