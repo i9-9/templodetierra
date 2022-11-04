@@ -34,7 +34,7 @@ const Navbar = () => {
     <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-10 ease-in duration-300 '>
         <div className='max-w-[1500px] flex justify-between items-center p-1 text-brown'>
             <Link href='/'>
-                <h1 style={{color: `${textColor}`}} >
+                <h1 style={{color: `${textColor}`}} className='cursor-pointer' >
                     <Image
                         alt="logo del templo de tierra"
                         src={logo}
@@ -68,16 +68,16 @@ const Navbar = () => {
             {/* Mobile Menu */}
             <div className={nav ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-yellow text-center ease-in duration-300' : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'}>
             <ul>
-                <li className='p-4 text-4xl hover:text-green'>
+                <li onClick={handleNav} className='p-4 text-4xl hover:text-green'>
                     <Link href='/'>El Templo</Link>
                 </li>
-                <li className='p-4 text-4xl hover:text-green'>
+                <li onClick={handleNav} className='p-4 text-4xl hover:text-green'>
                     <Link href='/'>Retiros y eventos</Link>
                 </li>
-                <li className='p-4 text-4xl hover:text-green'>
+                <li onClick={handleNav} className='p-4 text-4xl hover:text-green'>
                     <Link href='/'>Reservas</Link>
                 </li>
-                <li className='p-4 text-4xl hover:text-green'>
+                <li onClick={handleNav} className='p-4 text-4xl hover:text-green'>
                     <Link href='/'>Contacto</Link>
                 </li>
             </ul>
