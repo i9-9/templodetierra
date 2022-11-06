@@ -1,6 +1,9 @@
-import Head from 'next/head'
-import Hero from '../components/Hero'
-import Magia from '../components/Magia'
+import Head from 'next/head';
+import Hero from '../components/Hero';
+import Magia from '../components/Magia';
+import Proposito from '../components/Proposito';
+
+
 
 export default function Home() {
   return (
@@ -12,7 +15,8 @@ export default function Home() {
       </Head>
       <Hero heading='Templo de Tierra' subheading='ashram'/>
       <Magia />
-
+      <Proposito />
+      
 
     </div>
   )

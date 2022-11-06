@@ -6,7 +6,7 @@ const Magia = () => {
   return (
     <div className='md:columns-2 h-100'>
         <div className="container w-50 bg-yellow h-screen mt-20">
-            <h2 className='text-5xl lg:text-7xl font-bold font-roslindale text-brown text-center'>
+            <h2 className='text-5xl lg:text-6xl font-bold font-roslindale text-brown text-center'>
                 Experimentá con <br/>
                 nosotros la magia de 
                 <br/>vivir en la Bioconstrucción.
