@@ -2,7 +2,7 @@ import Head from 'next/head';
 import Hero from '../components/Hero';
 import Magia from '../components/Magia';
 import Proposito from '../components/Proposito';
-
+import Hospedaje from '../components/Hospedaje';
 
 
 export default function Home() {
@@ -16,8 +16,7 @@ export default function Home() {
       <Hero heading='Templo de Tierra' subheading='ashram'/>
       <Magia />
       <Proposito />
-      
-
+      <Hospedaje />
     </div>
   )
 }
