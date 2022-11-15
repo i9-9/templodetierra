@@ -6,9 +6,9 @@ import logo from '../public/TDT-LOGO.png'
 
 
 const Navbar = () => {
-    const [nav, setNav] = useState(false)
-    const [color, setColor] = useState('#F6DD8B')
-    const [textColor, setTextColor] = useState('#6E4C1B')
+    const [nav, setNav] = useState(false);
+    const [color, setColor] = useState('#F6DD8B');
+    const [textColor, setTextColor] = useState('#6E4C1B');
 
     const handleNav = () => {
         setNav(!nav)
@@ -39,20 +39,22 @@ const Navbar = () => {
                         alt="logo del templo de tierra"
                         src={logo}
                         placeholder="blur"
+                        width={68}
+                        height={57}
                         />
                 </h1>
             </Link>
             <ul style={{color: `${textColor}`}} className='hidden sm:flex items-center'>
-                <li className='px-4 py-2 hover:text-green' >
+                <li className='px-4 py-2 hover:text-green text-sm' >
                     <Link href='/'>El Templo</Link>
                 </li>
-                <li className='px-4 py-2 hover:text-green'>
+                <li className='px-4 py-2 hover:text-green text-sm'>
                     <Link href='/'>Retiros y eventos</Link>
                 </li>
-                <li className='px-4 py-2 hover:text-green'>
+                <li className='px-4 py-2 hover:text-green text-sm'>
                     <Link href='/'>Reservas</Link>
                 </li>
-                <li className='px-4 py-2 hover:text-green'>
+                <li className='px-4 py-2 hover:text-green text-sm   '>
                     <Link href='/'>
                         <button className='outline outline-1 px-2 py-2 flex justify-self-center'>Contacto</button>
                     </Link>
@@ -68,16 +70,16 @@ const Navbar = () => {
             {/* Mobile Menu */}
             <div className={nav ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-yellow text-center ease-in duration-300' : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'}>
             <ul>
-                <li onClick={handleNav} className='p-4 text-4xl hover:text-green'>
+                <li onClick={handleNav} className='p-4 text-3xl hover:text-green'>
                     <Link href='/'>El Templo</Link>
                 </li>
-                <li onClick={handleNav} className='p-4 text-4xl hover:text-green'>
+                <li onClick={handleNav} className='p-4 text-3xl hover:text-green'>
                     <Link href='/'>Retiros y eventos</Link>
                 </li>
-                <li onClick={handleNav} className='p-4 text-4xl hover:text-green'>
+                <li onClick={handleNav} className='p-4 text-3xl hover:text-green'>
                     <Link href='/'>Reservas</Link>
                 </li>
-                <li onClick={handleNav} className='p-4 text-4xl hover:text-green'>
+                <li onClick={handleNav} className='p-4 text-3xl hover:text-green'>
                     <Link href='/'>Contacto</Link>
                 </li>
             </ul>

@@ -3,7 +3,8 @@ import Hero from '../components/Hero';
 import Magia from '../components/Magia';
 import Proposito from '../components/Proposito';
 import Hospedaje from '../components/Hospedaje';
-
+import Puertas from '../components/Puertas';
+import Contacto from '../components/Contacto';
 
 export default function Home() {
   return (
@@ -17,6 +18,8 @@ export default function Home() {
       <Magia />
       <Proposito />
       <Hospedaje />
+      <Puertas />
+      <Contacto />
     </div>
   )
 }

@@ -9,12 +9,15 @@ module.exports = {
     extend: {
       fontFamily: {
         roslindale: 'Roslindale, bold', 
-        lane: 'Lane, normal'
+        lane: 'Lane, normal',
+        rosli: 'Roslindale, normal'
       },
       colors: {
         'yellow' : '#F6DD8B',
         'brown' : '#6E4C1C',
-        'green' : '#929043'
+        'green' : '#929043',
+        'pink' : '#C18665',
+        'yellowcito' : '#FAE6A9',
       }
     },
   },
