@@ -5,7 +5,7 @@ import magia from '../public/magia.png';
 
 const Magia = () => {
   return (
-    <div className='container flex bg-yellow columns-2xs sm:columns-1 mx-auto items-center md:items-center'>
+    <div className='container flex bg-yellow columns-2xs sm:columns-1 mx-auto items-center md:items-center '>
       <div className="container bg-yellow">
         <h2 className='text-5xl text-center lg:text-6xl font-rosli text-brown md:text-left'>
                  Experimentá con <br/>

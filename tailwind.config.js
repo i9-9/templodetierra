@@ -18,6 +18,7 @@ module.exports = {
         'green' : '#929043',
         'pink' : '#C18665',
         'yellowcito' : '#FAE6A9',
+        'greencito' : '#929043B0'
       }
     },
   },

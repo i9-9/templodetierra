@@ -4,7 +4,7 @@ import escalera from '../public/1-carousel.png';
 
 const Proposito = () => {
   return (
-    <div className='container flex bg-yellowcito mx-auto items-center m-32 '>
+    <div className='container flex bg-yellow mx-auto items-center my-20 '>
         <div className="container hidden md:flex align-bottom">
         <Image
          className='ease-in'
@@ -13,7 +13,7 @@ const Proposito = () => {
          width={580}
          />
         </div>
-        <div className="container bg-yellowcito">
+        <div className="container bg-yellow">
             <h2 className='text-4xl lg:text-6xl font-rosli text-brown text-center md:text-left'>
              Un lugar de retiro para el alma, <br/> donde se puedan generar <br/> transformaciones a nivel <br/> interno en cada individuo. 
             </h2>

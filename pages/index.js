@@ -5,6 +5,9 @@ import Proposito from '../components/Proposito';
 import Hospedaje from '../components/Hospedaje';
 import Puertas from '../components/Puertas';
 import Contacto from '../components/Contacto';
+import Video from '../components/Video';
+import Cuartos from '../components/Cuartos';
+import Foot from '../components/Foot';
 
 export default function Home() {
   return (
@@ -18,8 +21,11 @@ export default function Home() {
       <Magia />
       <Proposito />
       <Hospedaje />
+      {/* <Cuartos /> */}
+      <Video />
       <Puertas />
       <Contacto />
+      <Foot />
     </div>
   )
 }

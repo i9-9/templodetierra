@@ -32,9 +32,9 @@ const Navbar = () => {
 
   return (
     <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-10 ease-in duration-300 '>
-        <div className='max-w-[1500px] flex justify-between items-center p-1 text-brown'>
+        <div className='max-w-[1500px] flex justify-between items-center text-brown'>
             <Link href='/'>
-                <h1 style={{color: `${textColor}`}} className='cursor-pointer' >
+                <h1 style={{color: `${textColor}`}} className='cursor-pointer ml-2 mt-1' >
                     <Image
                         alt="logo del templo de tierra"
                         src={logo}
@@ -52,11 +52,11 @@ const Navbar = () => {
                     <Link href='/'>Retiros y eventos</Link>
                 </li>
                 <li className='px-4 py-2 hover:text-green text-sm'>
-                    <Link href='/'>Reservas</Link>
+                    <Link href='/'>Contacto</Link>
                 </li>
                 <li className='px-4 py-2 hover:text-green text-sm   '>
                     <Link href='/'>
-                        <button className='outline outline-1 px-2 py-2 flex justify-self-center'>Contacto</button>
+                        <button className='outline outline-1 px-2 py-2 flex justify-self-center'>Reservar</button>
                     </Link>
                 </li>
             </ul>

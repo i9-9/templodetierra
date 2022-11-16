@@ -8,16 +8,16 @@ import Habitacion4 from '../public/habitaciones/hab4.png'
 const Hospedaje = () => {
   return (
     <>
-    <div className='container mx-auto my-32 bg-yellow'>
-      <div className="container flex columns-2 mb-6">
-        <h2 className='text-6xl font-rosli text-brown w-4/5'>
+    <div className='container mx-auto my-32 bg-yellow flex flex-col columns-2 md:columns-4'>
+      <div className="container flex columns-2 mb-6 flex-col sm:flex-row text-center md:text-left">
+        <h2 className='text-6xl font-rosli text-brown w-full md:w-4/5 text-center md:text-left '>
           Hospedaje para el espíritu
         </h2>
-        <h4 className='text-xs text-brown'>
+        <h4 className='text-xs text-brown mt-4'>
         Conviviendo siempre con lo mejor de sí. Nuestras <br/> habitaciones están intencionadas para observar y sentir <br/> la naturaleza fundirse con nuestro propio ser.
         </h4>
       </div>
-      <div className="container columns-1 md:columns-4 flex justify-center gap-8">
+      <div className="container columns-1 md:columns-4 flex">
         <div>
           <Image
           src={Habitacion1}
@@ -79,12 +79,27 @@ const Hospedaje = () => {
           </button>
         </div>
       </div>
-      <p className='text-xs text-brown mt-10'>
+      {/* <p className='text-xs text-brown mt-10'>
       ***Servicio de desayuno incluído*** <br/>
       ***Incluída clase de yoga y meditación a la mañana***<br/>
       ***todas las habitaciones tienen vista al mar y al amanecer***<br/>
-      </p>
+      </p> */}
+      <div className="container">
+      <hr className='border-green mb-4 mt-10'/>
+      <div className="container columns-3 flex flex-row justify-between my-4">
+        <p className='text-green animate-pulse text-xs'>
+        Servicio de desayuno incluído
+        </p>
+        <p className='text-green animate-pulse text-xs'>
+        Incluída clase de yoga y meditación a la mañana
+        </p>
+        <p className='text-green animate-pulse text-xs'>
+        Todas las habitaciones tienen vista al mar y al amanecer
+        </p>
+        </div>  
+      <hr className='border-green my-4' />
 
+      </div>
     </div>
     </>
   )
