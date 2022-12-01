@@ -3,38 +3,31 @@ import Image from 'next/image'
 import logo from '../public/TDT-LOGO.png'
 import Link from 'next/link'
 
-
 const Foot = () => {
   return (
-    <div className="container mt-4 mx-auto max-w md:flex md:items-center w-full">
-      <hr className='border-green'
-       />
-      <div className='flex'>
-        <div className='flex flex-row items-center py-3'>
-        <Image
-                        alt="logo del templo de tierra"
-                        src={logo}
-                        placeholder="blur"
-                        width={35}
-                        height={30}
-                        />
-          <h5 className='text-sm font-roslindale text-brown'>
+    <footer className="w-full bg-yellow/80 mx-auto px-2">
+      <div className='flex flex-row items-center py-3 justify-between'>
+        <div className='flex flex-row items-center'>
+          <Image
+            alt="logo del templo de tierra"
+            src={logo}
+            placeholder="blur"
+            width={35}
+            height={30}
+          />
+          <Link href="https://templodetierra.com/">
+            <h5 className='text-sm font-roslindale text-brown hover:underline cursor-pointer'>
             Templo de Tierra
-          </h5>
-          <span className="text-xs text-brown sm:text-center">
-            © 2022 
-          <Link href="https://templodetierra.com/" className="hover:underline">
-            TDT
+            </h5>
           </Link>
+        </div>
+          <span className="text-xs text-brown sm:text-center">
+             © 2022 
           </span>
-        </div>
-        <div>
-
-        </div>
       </div>
-    </div>
+    </footer>
 
   )
 }
 
-export default Foot
+export default Foot;

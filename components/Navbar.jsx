@@ -1,8 +1,8 @@
 import React, {useState, useEffect} from 'react';
-import Link from 'next/link';
 import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 import Image from 'next/image';
-import logo from '../public/TDT-LOGO.png'
+import logo from '../public/TDT-LOGO.png';
+import { Link } from 'react-scroll';
 
 
 const Navbar = () => {
@@ -14,57 +14,40 @@ const Navbar = () => {
         setNav(!nav)
     }
 
-    useEffect(() => {
-        const changeColor = () => {
-            if(window.scrollY >= 90){
-                setColor('transparent')
-                setTextColor('#000000')
-            } 
-            else {
-                setColor('transparent')
-                setTextColor('#FFFFFF')
-            }
-        }
-        window.addEventListener('sc roll', changeColor);
-    }, []);
-
-
-
   return (
     <div style={{backgroundColor: `${color}`}} className='fixed left-0 top-0 w-full z-10 ease-in duration-300 '>
         <div className='max-w-[1500px] flex justify-between items-center text-brown'>
-            <Link href='/'>
+            <Link to='hero' spy={true} smooth={true} offset={0} duration={500}>
                 <h1 style={{color: `${textColor}`}} className='cursor-pointer ml-2 mt-1' >
                     <Image
                         alt="logo del templo de tierra"
                         src={logo}
                         placeholder="blur"
-                        width={68}
-                        height={57}
+                        width={51}
+                        height={43}
                         />
                 </h1>
             </Link>
             <ul style={{color: `${textColor}`}} className='hidden sm:flex items-center'>
-                <li className='px-4 py-2 hover:text-green text-sm' >
-                    <Link href='/'>El Templo</Link>
+                <li className='px-4 py-2 hover:text-green text-sm hover:cursor-pointer' >
+                    <Link to='magia' spy={true} smooth={true} offset={0} duration={500}>El Templo</Link>
                 </li>
                 <li className='px-4 py-2 hover:text-green text-sm'>
-                    <Link href='/'>Retiros y eventos</Link>
+                    <Link to='puertas' spy={true} smooth={true} offset={0} duration={500}>¿Dónde?</Link>
                 </li>
                 <li className='px-4 py-2 hover:text-green text-sm'>
-                    <Link href='/'>Contacto</Link>
-                </li>
-                <li className='px-4 py-2 hover:text-green text-sm   '>
-                    <Link href='/'>
-                        <button className='outline outline-1 px-2 py-2 flex justify-self-center'>Reservar</button>
+                    <Link to='contacto' spy={true} smooth={true} offset={0} duration={500}>
+                    <button className='outline outline-1 px-2 py-2 flex justify-self-center cursor-pointer'>Contacto</button>
                     </Link>
                 </li>
             </ul>
 
             {/* Mobile Button */}
-            <div onClick={handleNav} className='block sm:hidden z-10'>
+            <div onClick={handleNav} className='block sm:hidden z-10 mr-2'>
                 {nav ? 
-                (<AiOutlineClose style={{color: `${textColor}`}} size={20} />) : (<AiOutlineMenu style={{color: `${textColor}`}} size={20} />)
+                (<AiOutlineClose style={{color: `${textColor}`}} size={20} />) 
+                : 
+                (<AiOutlineMenu style={{color: `${textColor}`}} size={20} />)
                 }
             </div>
             {/* Mobile Menu */}

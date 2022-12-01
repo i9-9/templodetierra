@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+    scroll-behavior: smooth;
+}
+
+html{
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
 @layer base {
     @font-face{
         font-family: 'Roslindale';
@@ -26,10 +34,6 @@
     }
 }
 
-html{
-    scroll-behavior: smooth;
-    font-family: 'Open Sans', Helvetica, sans-serif;
-}
 
 .custom-img{
     background-image: url('../public/hero_img2.png');
@@ -48,4 +52,8 @@ html{
     height:100%;
     width:100%;
     position:absolute;
+}
+
+.pointer {
+    cursor: pointer;
 }

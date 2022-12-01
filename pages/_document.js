@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 
 export default function Document() {
   return (
-    <Html className='scroll-smooth' style={{scrollBehavior:'smooth'}}>
+    <Html>
       <Head>
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,7 +11,6 @@ export default function Document() {
       <body>
         <Main />
         <NextScript />
-        <script src="../path/to/flowbite/dist/flowbite.js"></script>
       </body>
     </Html>
   )
