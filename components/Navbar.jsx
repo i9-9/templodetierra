@@ -22,7 +22,6 @@ const Navbar = () => {
                     <Image
                         alt="logo del templo de tierra"
                         src={logo}
-                        placeholder="blur"
                         width={51}
                         height={43}
                         />
@@ -32,7 +31,7 @@ const Navbar = () => {
                 <li className='px-4 py-2 hover:text-green text-sm hover:cursor-pointer' >
                     <Link to='magia' spy={true} smooth={true} offset={0} duration={500}>El Templo</Link>
                 </li>
-                <li className='px-4 py-2 hover:text-green text-sm'>
+                <li className='px-4 py-2 hover:text-green text-sm hover:cursor-pointer'>
                     <Link to='puertas' spy={true} smooth={true} offset={0} duration={500}>¿Dónde?</Link>
                 </li>
                 <li className='px-4 py-2 hover:text-green text-sm'>
@@ -53,17 +52,14 @@ const Navbar = () => {
             {/* Mobile Menu */}
             <div className={nav ? 'sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-yellow text-center ease-in duration-300' : 'sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-full h-screen bg-black text-center ease-in duration-300'}>
             <ul>
-                <li onClick={handleNav} className='p-4 text-3xl hover:text-green'>
-                    <Link href='/'>El Templo</Link>
+                <li onClick={handleNav} className='p-4 text-3xl hover:text-green hover:cursor-pointer'>
+                    <Link to='magia' onClick={handleNav} spy={true} smooth={true} offset={0} duration={500}>El Templo</Link>
                 </li>
-                <li onClick={handleNav} className='p-4 text-3xl hover:text-green'>
-                    <Link href='/'>Retiros y eventos</Link>
+                <li onClick={handleNav} className='p-4 text-3xl hover:text-green hover:cursor-pointer'>
+                    <Link to='puertas' onClick={handleNav} spy={true} smooth={true} offset={0} duration={500}>¿Dónde?</Link>
                 </li>
-                <li onClick={handleNav} className='p-4 text-3xl hover:text-green'>
-                    <Link href='/'>Reservas</Link>
-                </li>
-                <li onClick={handleNav} className='p-4 text-3xl hover:text-green'>
-                    <Link href='/'>Contacto</Link>
+                <li onClick={handleNav} className='p-4 text-3xl hover:text-green hover:cursor-pointer'>
+                    <Link to='contacto' onClick={handleNav} spy={true} smooth={true} offset={0} duration={500}>Contacto</Link>
                 </li>
             </ul>
             </div>

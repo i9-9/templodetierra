@@ -11,7 +11,6 @@ const Foot = () => {
           <Image
             alt="logo del templo de tierra"
             src={logo}
-            placeholder="blur"
             width={35}
             height={30}
           />

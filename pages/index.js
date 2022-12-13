@@ -8,6 +8,7 @@ import Contacto from '../components/Contacto';
 import Video from '../components/Video';
 import Cuartos from '../components/Cuartos';
 import Foot from '../components/Foot';
+import Gallery from '../components/Gallery';
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <Proposito />
       {/* <Hospedaje /> */}
       {/* <Cuartos /> */}
+      <Gallery />
       <Video />
       <Puertas />
       <Contacto />

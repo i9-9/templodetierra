@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 
 const Magia = () => {
   return (
-    <div id='magia' className='container flex bg-yellow columns-2xs sm:columns-1 mx-auto items-center md:items-center pt-20 '>
+    <div id='magia' className='container flex bg-yellow mx-auto items-center flex-col sm:flex-row pt-20 '>
       <div className="container bg-yellow">
         <h2 className='text-5xl text-center lg:text-6xl font-rosli text-brown md:text-left'>
                  Experimentá con <br/>
@@ -21,7 +21,7 @@ const Magia = () => {
         
         </Link>
       </div>
-      <div className="container hidden md:flex justify-end relative ease-in duration-300">
+      <div className="container md:flex justify-end relative ease-in duration-300 p-10 xs:p-0">
         <Image
          src={magia}
          height={651}

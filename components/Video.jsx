@@ -12,7 +12,7 @@ const Video = () => {
             </p>
         </div>
         <div className='container mx-auto flex justify-center my-4 px-2 md:px-0'>
-            <iframe width="2000" height="600" src="https://www.youtube.com/embed/l9JPz8UYnwU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            <iframe width="2000" height="600" src="https://www.youtube.com/embed/l9JPz8UYnwU" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"  />
         </div>
     </>
   )
