@@ -43,7 +43,7 @@ const Form = () => {
         </textarea>
         <button
         type="submit"
-        className="px-12 py-2 border justify-center flex my-2 border-brown shadow text-brown hover:bg-yellow hover:text-brown drop-shadow-sm animate-pulse">
+        className="px-12 py-2 border justify-center flex my-2 border-brown shadow text-brown hover:bg-yellow hover:text-green hover:border-green drop-shadow-sm animate-pulse">
         Enviar
         </button>
     </form>

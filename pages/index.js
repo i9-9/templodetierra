@@ -6,8 +6,6 @@ import Hospedaje from '../components/Hospedaje';
 import Puertas from '../components/Puertas';
 import Contacto from '../components/Contacto';
 import Video from '../components/Video';
-import Cuartos from '../components/Cuartos';
-import Foot from '../components/Foot';
 import Gallery from '../components/Gallery';
 
 export default function Home() {
@@ -22,7 +20,7 @@ export default function Home() {
       <Magia />
       <Proposito />
       {/* <Hospedaje /> */}
-      {/* <Cuartos /> */}
+      
       <Gallery />
       <Video />
       <Puertas />
