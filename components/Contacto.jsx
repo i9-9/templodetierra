@@ -18,7 +18,10 @@ const Contacto = () => {
           • IG: 
         <a className='hover:text-green' href="https://instagram.com/templodetierra.uy" target="_blank">@templodetierra.uy</a>  
         </p>
-        <Form />
+          <h2 className='text-brown text-center font-bold my-5'>
+            Contactanos por mail: <a className='hover:text-green' href="mailto:templodetierra.ashram@gmail.com">templodetierra.ashram@gmail.com</a>
+          </h2>
+        {/* <Form /> */}
     </div>
   )
 }

@@ -9,7 +9,7 @@ const Form = () => {
     const sendEmail = (e) => {
       e.preventDefault();
   
-      emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+      emailjs.sendForm('service_8dhdnbw', 'template_hn7nz9h', form.current, 'GJiujgEqWf31MwQ-X')
         .then((result) => {
             console.log(result.text);
         }, (error) => {
@@ -43,6 +43,7 @@ const Form = () => {
         </textarea>
         <button
         type="submit"
+        value="send"
         className="px-12 py-2 border justify-center flex my-2 border-brown shadow text-brown hover:bg-yellow hover:text-green hover:border-green drop-shadow-sm animate-pulse">
         Enviar
         </button>

@@ -19,10 +19,7 @@ export default function Home() {
       <Hero heading='Templo de Tierra' subheading='ashram'/>
       <Magia />
       <Proposito />
-      {/* <Hospedaje /> */}
-      
       <Gallery />
-      <Video />
       <Puertas />
       <Contacto />
     </div>

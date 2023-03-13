@@ -26,7 +26,7 @@ const Gallery = () => {
             Clases de Surf y de WindSurf<br/>
             Masajes <br/>
             Clases de Paddle<br/>
-            Clases de Tenis<br/>
+            Clases de Tenis<br/>    
             Excursiones a Sierra de Rocha<br/>
             Visitas al <a className='text-green' href='https://macamuseo.org/'>MACA.</a><br/>
             </p>

@@ -6,8 +6,8 @@ import { Link } from 'react-scroll';
 const Puertas = () => {
   return (
     <>
-      <div id='puertas' className='container mx-auto bg-yellow my-22 md:columns-2 pt-40'>
-        <div className="container py-24 ">
+      <div id='puertas' className='container mx-auto bg-yellow my-22 md:columns-2 py-28'>
+        <div className="container py-16 ">
             <h2 className='text-brown font-rosli text-7xl mb-10 text-center md:text-left'>
             Nuestros corazones y puertas están abiertas
             </h2>
