@@ -3,11 +3,11 @@ import Foot from '../components/Foot'
 import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
+  const getLayout = Component.getLayout || ((page) => page)
+ 
   return (
     <>
-      <Navbar />
       <Component {...pageProps}/>
-      <Foot /> 
     </>
      )
 }

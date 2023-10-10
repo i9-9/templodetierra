@@ -3,6 +3,7 @@ import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 import Image from 'next/image';
 import logo from '../public/TDT-LOGO.png';
 import { Link } from 'react-scroll';
+import NextLink from 'next/link';
 
 
 const Navbar = () => {
@@ -33,6 +34,9 @@ const Navbar = () => {
                 </li>
                 <li className='px-4 py-2 hover:text-green text-sm hover:cursor-pointer'>
                     <Link to='puertas' spy={true} smooth={true} offset={0} duration={500}>¿Dónde?</Link>
+                </li>
+                <li className='px-4 py-2 hover:text-green text-sm hover:cursor-pointer'>
+                    <NextLink href="/retiro">Convocatoria a artistas</NextLink>
                 </li>
                 <li className='px-4 py-2 hover:text-green text-sm'>
                     <Link to='contacto' spy={true} smooth={true} offset={0} duration={500}>
