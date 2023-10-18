@@ -62,6 +62,9 @@ const Navbar = () => {
                 <li onClick={handleNav} className='p-4 text-3xl hover:text-green hover:cursor-pointer'>
                     <Link to='puertas' onClick={handleNav} spy={true} smooth={true} offset={0} duration={500}>¿Dónde?</Link>
                 </li>
+                <li className='px-4 py-2 hover:text-green text-sm hover:cursor-pointer'>
+                    <NextLink href="/retiro">Convocatoria a artistas</NextLink>
+                </li>
                 <li onClick={handleNav} className='p-4 text-3xl hover:text-green hover:cursor-pointer'>
                     <Link to='contacto' onClick={handleNav} spy={true} smooth={true} offset={0} duration={500}>Contacto</Link>
                 </li>

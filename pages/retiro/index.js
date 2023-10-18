@@ -17,7 +17,7 @@ export default function Retiro() {
       <Navbar />
       <Title/>
       <Info/>
-      <Formulario/>
+      <Formulario/>      
       <Foot/>
     </div>
   )
