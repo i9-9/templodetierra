@@ -35,9 +35,9 @@ const Navbar = () => {
                 <li className='px-4 py-2 hover:text-green text-sm hover:cursor-pointer'>
                     <Link to='puertas' spy={true} smooth={true} offset={0} duration={500}>¿Dónde?</Link>
                 </li>
-                <li className='px-4 py-2 hover:text-green text-sm hover:cursor-pointer'>
+                {/* <li className='px-4 py-2 hover:text-green text-sm hover:cursor-pointer'>
                     <NextLink href="/retiro">Convocatoria a artistas</NextLink>
-                </li>
+                </li> */}
                 <li className='px-4 py-2 hover:text-green text-sm'>
                     <Link to='contacto' spy={true} smooth={true} offset={0} duration={500}>
                     <button className='outline outline-1 px-2 py-2 flex justify-self-center cursor-pointer'>Contacto</button>
@@ -62,9 +62,9 @@ const Navbar = () => {
                 <li onClick={handleNav} className='p-4 text-3xl hover:text-green hover:cursor-pointer'>
                     <Link to='puertas' onClick={handleNav} spy={true} smooth={true} offset={0} duration={500}>¿Dónde?</Link>
                 </li>
-                <li className='px-4 py-2 hover:text-green text-sm hover:cursor-pointer'>
+                {/* <li className='px-4 py-2 hover:text-green text-sm hover:cursor-pointer'>
                     <NextLink href="/retiro">Convocatoria a artistas</NextLink>
-                </li>
+                </li> */}
                 <li onClick={handleNav} className='p-4 text-3xl hover:text-green hover:cursor-pointer'>
                     <Link to='contacto' onClick={handleNav} spy={true} smooth={true} offset={0} duration={500}>Contacto</Link>
                 </li>

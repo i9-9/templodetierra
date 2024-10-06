@@ -35,9 +35,12 @@ html{
 }
 
 
-.custom-img{
+.custom-img {
     background-image: url('../public/hero_img2.png');
+    background-size: cover; /* Ensures the image spans the entire hero section */
+    background-position: center; /* Keeps the image centered */
 }
+
 
 .map-responsive{
     overflow:hidden;
